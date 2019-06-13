@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+.whole-site {
+    font-family: 'Poppins', sans-serif;
+    max-width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.bg-image {
+    background-image: url('/assets/images/Scotland.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 300px 400px;
+}
+
+.bg-color {
+    background-color: #004d66;
+}
+
+.home-logo-img {
+    border-radius: 50px;
+    display: block;
+    width: 250px;
+    height: 155px;
+    margin: 30px auto 20px;
+}
+
+.sea-image {
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+/*...........................Header*/
+
+.main-title {
+    color: #ffffff;
+    font-size: 45px;
+    text-align: center;
+    margin: 0;
+    padding: 30px 0;
+    display: block;
+}
+
+.location-button {
+    text-decoration: none;
+    border: none;
+    background: none;
+}
+
+.option {
+    margin-left: 10px;
+    font-size: 12px;
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/*...........................Body*/
+
+.Intro {
+    color: #ffffff;
+    text-align: center;
+    margin: 10px;
+    font-size: 13px;
+}
+
+/*...........................media*/
+
+@media (min-width:600px) {
+    .home-logo-img {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 20px;
+    }
+
+    .Intro {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    .sea-image {
+        width: 90%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .option {
+        margin-left: 15px;
+        font-size: 23px;
+    }
+}
+
+
+@media (min-width:730px) {
+    .bg-image {
+        background-position: right;
+        background-size: 500px 650px;
+    }
+
+    .main-title {
+        margin: 20px;
+        font-size: 75px;
+        text-align: left;
+    }
+
+    .home-logo-img {
+        width: 350px;
+        height: 217px;
+        margin: 30px auto 20px;
+    }
+
+    .option {
+        font-size: 33px;
+    }
+}
+
+@media (min-width:1000px) {
+    .main-title {
+        font-size: 85px;
+        margin: 30px;
+    }
+
+    .bg-image {
+        background-size: 700px 900px;
+    }
+
+    .home-logo-img {
+        width: 450px;
+        height: 279px;
+    }
+}
+
+@media (min-width:1500px) {
+    .main-title {
+        font-size: 140px;
+        margin: 60px;
+    }
+
+    .bg-image {
+        background-size: 800px 1100px;
+    }
+
+    .option {
+        font-size: 45px;
+        margin-left: 35px;
+    }
+
+    .home-logo-img {
+        width: 600px;
+        height: 372px;
+    }
+    
+    .Intro {
+        font-size: 30px;
+        margin-top: 70px;
+    }
+
+    .sea-image {
+        margin-top: 35px;
+        width: 80%;
+    }
+}
