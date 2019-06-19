@@ -27,10 +27,20 @@
     margin: 30px auto 20px;
 }
 
+.location {
+    display: none;
+}
+
+.location-img {
+    width: 100%;
+}
+
 .sea-image {
     width: 100%;
     margin-top: 20px;
 }
+
+
 
 
 /*...........................Header*/
@@ -52,7 +62,7 @@
 
 .option {
     margin-left: 10px;
-    font-size: 12px;
+    font-size: 15px;
     color: #ffffff;
     text-decoration: underline;
 }
@@ -66,18 +76,33 @@
     font-size: 13px;
 }
 
+.sub-title {
+    color: #ffffff;
+    text-align: center;
+    margin: 10px;
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+
 /*...........................media*/
 
 @media (min-width:600px) {
     .home-logo-img {
-        margin-left: 10px;
-        margin-right: 10px;
+        height: 92px;
         margin-top: 20px;
     }
 
     .Intro {
         font-size: 20px;
         margin-top: 20px;
+    }
+
+    .location-img {
+        width: 90%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .sea-image {
@@ -95,24 +120,27 @@
 
 
 @media (min-width:730px) {
+    .home-logo-img {
+        height: 130px;
+        margin-top: 50px;
+    }
+
     .bg-image {
         background-position: right;
         background-size: 500px 650px;
     }
 
     .main-title {
-        margin: 20px;
         font-size: 75px;
         text-align: left;
-    }
-
-    .home-logo-img {
-        width: 350px;
-        height: 217px;
-        margin: 30px auto 20px;
+        padding-left: 30px;
     }
 
     .option {
+        font-size: 33px;
+    }
+
+    .sub-title {
         font-size: 33px;
     }
 }
@@ -120,7 +148,6 @@
 @media (min-width:1000px) {
     .main-title {
         font-size: 85px;
-        margin: 30px;
     }
 
     .bg-image {
@@ -128,15 +155,13 @@
     }
 
     .home-logo-img {
-        width: 450px;
-        height: 279px;
+        height: 165px;
     }
 }
 
 @media (min-width:1500px) {
     .main-title {
         font-size: 140px;
-        margin: 60px;
     }
 
     .bg-image {
@@ -149,17 +174,25 @@
     }
 
     .home-logo-img {
-        width: 600px;
-        height: 372px;
+        height: 330px;
     }
-    
+
     .Intro {
         font-size: 30px;
         margin-top: 70px;
+    }
+
+    .sub-title {
+        font-size: 45px;
+    }
+
+    .location-img {
+        width: 70%;
     }
 
     .sea-image {
         margin-top: 35px;
         width: 80%;
     }
+
 }
