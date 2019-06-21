@@ -22,8 +22,8 @@
         <div class="row">
             <div class="choices">
                 <button class="location-button"><span class="north-1 option">North/</span></button>
-                <button class="location-button"><span class="south-1 option">South/</span></button>
                 <button class="location-button"><span class="east-1 option">East/</span></button>
+                <button class="location-button"><span class="south-1 option">South/</span></button>
                 <button class="location-button"><span class="west-1 option">West/</span></button>
                 <button class="location-button"><span class="central-1 option">Central/</span></button>
             </div>
@@ -50,20 +50,21 @@
             <div class="container-fluid">
                 <div class="north location">
                     <h3 class="sub-title">North</h3>
-                    <a href="" target="_blank"><img src="" class="location-img" alt=""></img></a>
-                </div>
-                <div class="south location">
-                    <h3 class="sub-title">South</h3>
-                    <a href="" target="_blank"><img src="" class="location-img" alt=""></img></a>
+                    <a href="https://www.google.co.uk/" target="_blank"><img src="./assets/images/dunnottar-castle.jpg" class="location-img" alt=""></img></a>
+                    <a href="https://www.google.co.uk/" target="_blank"><img src="./assets/images/loch-torridon.jpg" class="location-img" alt=""></img></a>
                 </div>
                 <div class="east location">
                     <h3 class="sub-title">East</h3>
                     <a href="https://spark.adobe.com/page/S5Ah3VW4KAIaU/" target="_blank"><img src="./assets/images/elcho-castle.jpg" class="location-img" alt="Elcho Castle"></img></a>
                     <a href="https://spark.adobe.com/page/CXdyba2xhGdxg/" target="_blank"><img src="./assets/images/falkland-palace.jpg" class="location-img" alt="Falkland Palace"></img></a>
                 </div>
+                <div class="south location">
+                    <h3 class="sub-title">South</h3>
+                    <a href="https://www.google.co.uk/" target="_blank"><img src="./assets/images/floors-castle.jpg" class="location-img" alt=""></img></a>
+                </div>
                 <div class="west location">
                     <h3 class="sub-title">West</h3>
-                    <a href="" target="_blank"><img src="" class="location-img" alt=""></img></a>
+                    <a href="https://www.google.co.uk/" target="_blank"><img src="./assets/images/mccaigs-tower.jpg" class="location-img" alt=""></img></a>
                 </div>
                 <div class="central location">
                     <h3 class="sub-title">Central</h3>
@@ -75,35 +76,11 @@
             <div id="map"></div>
         </div>
     </div>
-    
-    <script>
-      function initMap() {
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 6,
-          center: {lat: 56.4907, lng: -4.2026}
-        });
-        var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-        var markers = locations.map(function(location, i) {
-          return new google.maps.Marker({
-            position: location,
-            label: labels[i % labels.length]
-          });
-        });
-        var markerCluster = new MarkerClusterer(map, markers,
-            {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
-      }
-      var locations = [
-        {lat: 56.3745, lng: -3.3546},
-        {lat: 56.2543, lng: -3.2056},
-        {lat: 56.3410, lng: -3.8710}
-      ]
-    </script>
     <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
     </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1aM34q3lncJ5MufAembcPia1G6h76u4A&callback=initMap">
-    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1aM34q3lncJ5MufAembcPia1G6h76u4A&callback=initMap"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="assets/js/maps.js"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 

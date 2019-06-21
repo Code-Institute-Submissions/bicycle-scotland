@@ -27,3 +27,5 @@ $(document).ready(function() {
 $(".option").on("click", function() {
     $(".opener").hide("slow");
 });
+
+
