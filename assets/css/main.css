@@ -8,7 +8,7 @@
 }
 
 .bg-image {
-    background-image: url('/assets/images/Scotland.jpg');
+    background-image: url("../images/scotland.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -33,6 +33,7 @@
 
 .location-img {
     width: 100%;
+    margin-bottom: 20px;
 }
 
 .sea-image {
@@ -40,13 +41,10 @@
     margin-top: 20px;
 }
 
-
-
-
 /*...........................Header*/
 
 .main-title {
-    color: #ffffff;
+    color: #f2f0e4;
     font-size: 45px;
     text-align: center;
     margin: 0;
@@ -63,25 +61,43 @@
 .option {
     margin-left: 10px;
     font-size: 15px;
-    color: #ffffff;
+    color: #f2f0e4;
     text-decoration: underline;
+}
+
+.red {
+    color: #ff704d;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+}
+
+.opener {
+    margin-bottom: 50px;
 }
 
 /*...........................Body*/
 
 .Intro {
-    color: #ffffff;
+    color: #f2f0e4;
     text-align: center;
     margin: 10px;
     font-size: 13px;
 }
 
 .sub-title {
-    color: #ffffff;
+    color: #f2f0e4;
     text-align: center;
     margin: 10px;
     font-size: 25px;
     text-decoration: underline;
+}
+
+#map {
+    width: 100%;
+    height: 350px;
+    margin-bottom: 20px;
 }
 
 
@@ -194,5 +210,20 @@
         margin-top: 35px;
         width: 80%;
     }
+}
 
+
+
+@media (min-height:700px) {
+    #map {
+        height: 500px;
+
+    }
+}
+
+@media (min-height:1000px) {
+    #map {
+        height: 700px;
+
+    }
 }

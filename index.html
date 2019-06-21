@@ -31,6 +31,9 @@
     </div>
     <div class="container-fluid">
         <div class="row">
+            <img src="./assets/images/sea-image.jpg" class="sea-image" alt="sea image" />
+        </div>
+        <div class="row">
             <div class="col-xs-12">
                 <div class="opener">
                     <h2 class="sub-title">About:</h2>
@@ -47,31 +50,59 @@
             <div class="container-fluid">
                 <div class="north location">
                     <h3 class="sub-title">North</h3>
-                    <a><img src="" class="location-img" alt=""></img></a>
+                    <a href="" target="_blank"><img src="" class="location-img" alt=""></img></a>
                 </div>
                 <div class="south location">
                     <h3 class="sub-title">South</h3>
-                    <a><img src="" class="location-img" alt=""></img></a>
+                    <a href="" target="_blank"><img src="" class="location-img" alt=""></img></a>
                 </div>
                 <div class="east location">
                     <h3 class="sub-title">East</h3>
-                    <a><img src="./assets/images/falkland-palace.jpg" class="location-img" alt="Falkland Palace"></img></a>
-                    <a><img src="./assets/images/elcho-castle.jpg" class="location-img" alt="Elcho Castle"></img></a>
+                    <a href="https://spark.adobe.com/page/S5Ah3VW4KAIaU/" target="_blank"><img src="./assets/images/elcho-castle.jpg" class="location-img" alt="Elcho Castle"></img></a>
+                    <a href="https://spark.adobe.com/page/CXdyba2xhGdxg/" target="_blank"><img src="./assets/images/falkland-palace.jpg" class="location-img" alt="Falkland Palace"></img></a>
                 </div>
                 <div class="west location">
                     <h3 class="sub-title">West</h3>
-                    <a><img src="" class="location-img" alt=""></img></a>
+                    <a href="" target="_blank"><img src="" class="location-img" alt=""></img></a>
                 </div>
                 <div class="central location">
                     <h3 class="sub-title">Central</h3>
-                    <a><img src="./assets/images/drummond-castle.jpg" class="location-img" alt="Drummond Castle"></img></a>
+                    <a href="https://spark.adobe.com/page/24I9uezos8dwq/" target="_blank"><img src="./assets/images/drummond-castle.jpg" class="location-img" alt="Drummond Castle"></img></a>
                 </div>
             </div>
         </div>
         <div class="row">
-            <img src="./assets/images/sea-image.jpg" class="sea-image" alt="sea image" />
+            <div id="map"></div>
         </div>
     </div>
+    
+    <script>
+      function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 6,
+          center: {lat: 56.4907, lng: -4.2026}
+        });
+        var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        var markers = locations.map(function(location, i) {
+          return new google.maps.Marker({
+            position: location,
+            label: labels[i % labels.length]
+          });
+        });
+        var markerCluster = new MarkerClusterer(map, markers,
+            {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
+      }
+      var locations = [
+        {lat: 56.3745, lng: -3.3546},
+        {lat: 56.2543, lng: -3.2056},
+        {lat: 56.3410, lng: -3.8710}
+      ]
+    </script>
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1aM34q3lncJ5MufAembcPia1G6h76u4A&callback=initMap">
+    </script>
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
 </body>
