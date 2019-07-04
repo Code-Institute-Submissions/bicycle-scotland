@@ -94,12 +94,18 @@
     text-decoration: underline;
 }
 
-#map {
+.display {
     width: 80%;
     height: 350px;
     margin-bottom: 40px;
     margin-left: auto;
     margin-right: auto;
+}
+
+#map {
+    width: 80%;
+    height: 350px;
+    margin: 40px auto;
 }
 
 
@@ -217,6 +223,10 @@
 
 
 @media (min-height:700px) {
+    .display {
+        height: 500px;
+    }
+
     #map {
         height: 500px;
 
@@ -224,6 +234,10 @@
 }
 
 @media (min-height:1000px) {
+    .display {
+        height: 700px;
+    }
+
     #map {
         height: 700px;
 
