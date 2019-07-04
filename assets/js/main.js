@@ -33,17 +33,31 @@ $(document).ready(function() {
         };
     });
 
-    if ($(".location").css("display") == ("none")) {
-        $(".opener").css("display", "block");
+    function sendMail(contactForm) {
+        emailjs.send("gmail", "Grant", {
+                "from_name": contactForm.name.value,
+                "from_email": contactForm.emailaddress.value,
+                "further_question": contactForm.furtherquestion.value
+            })
+            .then(
+                function(response) {
+                    console.log("SUCCESS", response);
+                },
+                function(error) {
+                    console.log("FAILED", error);
+                });
+        return false;
     }
+});
+
+/*if ($(".location").css("display") == ("none")) {
+    $(".opener").css("display", "block");
+}*/
 
 
 
 
-
-
-
-    function initMap() {
+/*    function initMap() {
         var map = new google.maps.Map(document.getElementById("map"), {
             zoom: 7,
             center: {
@@ -73,10 +87,4 @@ $(document).ready(function() {
 
         var markerCluster = new MarkerClusterer(map, markers, { imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m' });
     };
-
-});
-
-
-if ($(".location").css("display") == ("none")) {
-    $(".opener").css("display", "block");
-}
+*/

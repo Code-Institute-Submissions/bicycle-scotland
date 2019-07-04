@@ -11,68 +11,93 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/main.css" type="text/css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("<user_aOXkO6zpybZx3E58jGjeI>");
+        })();
+    </script>
 </head>
 
 <body class="bg-color bg-image whole-site">
-    <div class="container-fluid">
-        <div class="row">
-            <h1 class="main-title col-xs-12 col-sm-8">Bicycle Scotland</h1>
-            <img src="./assets/images/logo.jpg" class="home-logo-img col-xs-12 col-sm-4 col-md-3" alt="logo" />
-        </div>
-        <div class="row">
-            <div class="choices">
-                <button class="location-button"><span class="north-1 option">North/</span></button>
-                <button class="location-button"><span class="east-1 option">East/</span></button>
-                <button class="location-button"><span class="south-1 option">South/</span></button>
-                <button class="location-button"><span class="west-1 option">West/</span></button>
-                <button class="location-button"><span class="central-1 option">Central/</span></button>
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <h1 class="main-title col-xs-12 col-sm-8">Bicycle Scotland</h1>
+                <img src="./assets/images/logo.jpg" class="home-logo-img col-xs-12 col-sm-4 col-md-3" alt="logo" />
+            </div>
+            <div class="row">
+                <div class="choices">
+                    <button class="location-button"><span class="north-1 option">North/</span></button>
+                    <button class="location-button"><span class="east-1 option">East/</span></button>
+                    <button class="location-button"><span class="south-1 option">South/</span></button>
+                    <button class="location-button"><span class="west-1 option">West/</span></button>
+                    <button class="location-button"><span class="central-1 option">Central/</span></button>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="container-fluid">
-        <div class="row">
-            <img src="./assets/images/sea-image.jpg" class="sea-image" alt="sea image" />
-        </div>
+    </header>
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                <img src="./assets/images/sea-image.jpg" class="sea-image" alt="sea image" />
+            </div>
+            <div class="row">
+                <div class="opener">
+                    <h2 class="sub-title">About:</h2>
+                    <p class="Intro">Have you ever lost yourself on your bike, you know when you fall into a trance like state and before you know it, you wondered how you got to that point in the road. It was after such a moment that I came up with the idea to write
+                        and photograph my own bike rides.</p>
+                    <p class="Intro">I have spent years travelling around the UK taking photographs of bike races so time to take a step back and explore and photograph what’s on my doorstep.</p>
+                    <p class="Intro">Every time I go out on my bike, I try to visit something of interest.</p>
+                    <p class="Intro">I ride a road bike and an e-bike depending on how I feel, I get equal pleasure from both all be it as age creeps up on me, I tend to favour the e-bike more at the moment.</p>
+                    <p class="Intro">If you are interested in cycling routes and exploring Scotland, I am sure you will find something in to enjoy.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="container-fluid">
+                    <div class="north location">
+                        <h3 class="sub-title">North</h3>
+                        <a href="https://www.google.co.uk/" target="_blank"><img src="./assets/images/dunnottar-castle.jpg" class="location-img" alt="Dunnottar Castle"/></a>
+                        <a href="https://www.google.co.uk/" target="_blank"><img src="./assets/images/loch-torridon.jpg" class="location-img" alt="Loch Torridon"/></a>
+                    </div>
+                    <div class="east location">
+                        <h3 class="sub-title">East</h3>
+                        <a href="https://spark.adobe.com/page/S5Ah3VW4KAIaU/" target="_blank"><img src="./assets/images/elcho-castle.jpg" class="location-img" alt="Elcho Castle"/></a>
+                        <a href="https://spark.adobe.com/page/CXdyba2xhGdxg/" target="_blank"><img src="./assets/images/falkland-palace.jpg" class="location-img" alt="Falkland Palace"/></a>
+                    </div>
+                    <div class="south location">
+                        <h3 class="sub-title">South</h3>
+                        <a href="https://www.google.co.uk/" target="_blank"><img src="./assets/images/floors-castle.jpg" class="location-img" alt="Floors Castle"/></a>
+                    </div>
+                    <div class="west location">
+                        <h3 class="sub-title">West</h3>
+                        <a href="https://www.google.co.uk/" target="_blank"><img src="./assets/images/mccaigs-tower.jpg" class="location-img" alt="McCraig's Tower"/></a>
+                    </div>
+                    <div class="central location">
+                        <h3 class="sub-title">Central</h3>
+                        <a href="https://spark.adobe.com/page/24I9uezos8dwq/" target="_blank"><img src="./assets/images/drummond-castle.jpg" class="location-img" alt="Drummond Castle"/></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <iframe src="https://www.google.co.uk/maps/d/embed?mid=1Lg1JitNsfPSvtj3k2F9o5x8s-8I-Yvgc" class="display"></iframe>
+            </div>
+    </main>
+    <footer>
         <div class="row">
             <div class="opener">
-                <h2 class="sub-title">About:</h2>
-                <p class="Intro">Have you ever lost yourself on your bike, you know when you fall into a trance like state and before you know it, you wondered how you got to that point in the road. It was after such a moment that I came up with the idea to write and
-                    photograph my own bike rides.</p>
-                <p class="Intro">I have spent years travelling around the UK taking photographs of bike races so time to take a step back and explore and photograph what’s on my doorstep.</p>
-                <p class="Intro">Every time I go out on my bike, I try to visit something of interest.</p>
-                <p class="Intro">I ride a road bike and an e-bike depending on how I feel, I get equal pleasure from both all be it as age creeps up on me, I tend to favour the e-bike more at the moment.</p>
-                <p class="Intro">If you are interested in cycling routes and exploring Scotland, I am sure you will find something in to enjoy.</p>
+                <h2 class="sub-title">Contact me</h2>
+                <p class="Intro">If you have any further questions about any of my rides, please don't be afraid to contact me below.</p>
             </div>
+            <form onsubmit="return sendMail(this);" method="post" class="center-form">
+
+                <input type="text" name="name" class="center-form information" placeholder="Name" required/>
+                <input type="text" name="emailaddress" class="center-form information" placeholder="Email" required/>
+                <textarea rows="5" name="furtherquestion" class="center-form question" placeholder="Further Questions" required></textarea>
+                <button type="submit" class="btn center-form">Send Question</button>
+            </form>
         </div>
-        <div class="row">
-            <div class="container-fluid">
-                <div class="north location">
-                    <h3 class="sub-title">North</h3>
-                    <a href="https://www.google.co.uk/" target="_blank"><img src="./assets/images/dunnottar-castle.jpg" class="location-img" alt=""/></a>
-                    <a href="https://www.google.co.uk/" target="_blank"><img src="./assets/images/loch-torridon.jpg" class="location-img" alt=""/></a>
-                </div>
-                <div class="east location">
-                    <h3 class="sub-title">East</h3>
-                    <a href="https://spark.adobe.com/page/S5Ah3VW4KAIaU/" target="_blank"><img src="./assets/images/elcho-castle.jpg" class="location-img" alt="Elcho Castle"/></a>
-                    <a href="https://spark.adobe.com/page/CXdyba2xhGdxg/" target="_blank"><img src="./assets/images/falkland-palace.jpg" class="location-img" alt="Falkland Palace"/></a>
-                </div>
-                <div class="south location">
-                    <h3 class="sub-title">South</h3>
-                    <a href="https://www.google.co.uk/" target="_blank"><img src="./assets/images/floors-castle.jpg" class="location-img" alt=""/></a>
-                </div>
-                <div class="west location">
-                    <h3 class="sub-title">West</h3>
-                    <a href="https://www.google.co.uk/" target="_blank"><img src="./assets/images/mccaigs-tower.jpg" class="location-img" alt=""/></a>
-                </div>
-                <div class="central location">
-                    <h3 class="sub-title">Central</h3>
-                    <a href="https://spark.adobe.com/page/24I9uezos8dwq/" target="_blank"><img src="./assets/images/drummond-castle.jpg" class="location-img" alt="Drummond Castle"/></a>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <iframe src="https://www.google.co.uk/maps/d/embed?mid=1Lg1JitNsfPSvtj3k2F9o5x8s-8I-Yvgc" class="display"></iframe>
-        </div>
+    </footer>
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
     <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
