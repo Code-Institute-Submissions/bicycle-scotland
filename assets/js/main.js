@@ -1,43 +1,45 @@
-$(document).ready(function() {
-    $(".north-1").click(function() {
+$(document).ready(function () {
+    $(".north-1").click(function () {
         $(".north").slideToggle("slow");
     });
 
-    $(".east-1").click(function() {
+    $(".east-1").click(function () {
         $(".east").slideToggle("slow");
     });
 
-    $(".south-1").click(function() {
+    $(".south-1").click(function () {
         $(".south").slideToggle("slow");
     });
 
-    $(".west-1").click(function() {
+    $(".west-1").click(function () {
         $(".west").slideToggle("slow");
     });
 
-    $(".central-1").click(function() {
+    $(".central-1").click(function () {
         $(".central").slideToggle("slow");
     });
+    
+    $(".about").click(function () {
+        $(".location").hide();
+        $(".option").removeClass("red");
+        $(".opener").show("slow");
+    });
 
-    $(".option").click(function() {
+    $(".option").click(function () {
         $(this).toggleClass("red");
     });
 
-    $(".option").on("click", function() {
+    $(".option").on("click", function () {
         $(".opener").hide("slow");
     });
 
-    /*$(".location").on("click", function() {
-        if ($(".location").css("display") == ("none")) {
-            $(".opener").css("display", "block");
-        }
-    });*/
+    
     
     var myform = $("form#myform");
-    myform.submit(function(event) {
+    myform.submit(function (event) {
         event.preventDefault();
         
-        var params = myform.serializeArray().reduce(function(obj, item) {
+        var params = myform.serializeArray().reduce(function (obj, item) {
             obj[item.name] = item.value;
             return obj;
         }, {});
@@ -47,10 +49,10 @@ $(document).ready(function() {
         var template_id = "Bicycle_Scotland";
         myform.find("button").text("Sending...");
         emailjs.send(service_id, template_id, params)
-            .then(function() {
+            .then(function () {
                 alert("Sent!");
                 myform.find("button").text("Send");
-            }, function(err) {
+            }, function (err) {
                 alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
                 myform.find("button").text("Send");
             });
@@ -58,6 +60,12 @@ $(document).ready(function() {
         return false;
     });
 })
+
+/*$(".location").on("click", function() {
+        if ($(".location").css("display") == ("none")) {
+            $(".opener").css("display", "block");
+        }
+    });*/
 
 /*if ($(".location").css("display") == ("none")) {
     $(".opener").css("display", "block");

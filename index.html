@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/main.css" type="text/css" />
-    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
-    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 
 <body class="bg-color bg-image whole-site">
@@ -23,13 +23,13 @@
                 <img src="./assets/images/logo.jpg" class="home-logo-img col-xs-12 col-sm-4 col-md-3" alt="logo" />
             </div>
             <div class="row">
-                <div class="choices">
-                    <button class="location-button"><span class="north-1 option">North/</span></button>
-                    <button class="location-button"><span class="east-1 option">East/</span></button>
-                    <button class="location-button"><span class="south-1 option">South/</span></button>
-                    <button class="location-button"><span class="west-1 option">West/</span></button>
-                    <button class="location-button"><span class="central-1 option">Central/</span></button>
-                </div>
+                <button class="location-button"><span class="about">About/</span></button>
+                <button class="location-button"><span class="north-1 option">North/</span></button>
+                <button class="location-button"><span class="east-1 option">East/</span></button>
+                <button class="location-button"><span class="south-1 option">South/</span></button>
+                <button class="location-button"><span class="west-1 option">West/</span></button>
+                <button class="location-button"><span class="central-1 option">Central/</span></button>
+                
             </div>
         </div>
     </header>
@@ -78,6 +78,7 @@
             <div class="row">
                 <iframe src="https://www.google.co.uk/maps/d/embed?mid=1Lg1JitNsfPSvtj3k2F9o5x8s-8I-Yvgc" class="display"></iframe>
             </div>
+        </div>
     </main>
     <footer>
         <div class="row container-fluid">
@@ -90,22 +91,21 @@
                     <label class="form-label">Name</label>
                     <input type="text" name="from_name" class="information" />
                     <label class="form-label">Email</label>
-                    <input type="text" name="from_email" class="information"/>
+                    <input type="text" name="from_email" class="information" />
                     <label class="form-label">Any Further Question</label>
-                    <textarea rows="5" type="textarea" name="furtherquestion" class="information"></textarea>
+                    <textarea rows="5" name="furtherquestion" class="information"></textarea>
                     <br>
                     <button class="form-button">Send</button>
                 </form>
             </div>
         </div>
     </footer>
-    </div>
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
-    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <!--<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>-->
     <script src="assets/js/main.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1aM34q3lncJ5MufAembcPia1G6h76u4A&callback=initMap"></script>
-    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
-    <script type="text/javascript">
+    <!--<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1aM34q3lncJ5MufAembcPia1G6h76u4A&callback=initMap"></script>-->
+    <script  src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+    <script>
         (function() {
             emailjs.init("user_aOXkO6zpybZx3E58jGjeI");
         })();

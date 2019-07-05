@@ -49,6 +49,13 @@
     text-decoration: underline;
 }
 
+.about {
+    margin-left: 10px;
+    font-size: 15px;
+    color: #f2f0e4;
+    text-decoration: underline;
+}
+
 .red {
     color: #ff704d;
     transition: all 0.35s ease-in-out;
@@ -186,6 +193,11 @@
         font-size: 23px;
     }
 
+    .about {
+        margin-left: 15px;
+        font-size: 23px;
+    }
+
     .display {
         width: 80%;
     }
@@ -221,6 +233,10 @@
     }
 
     .option {
+        font-size: 33px;
+    }
+    
+    .about {
         font-size: 33px;
     }
 
@@ -269,6 +285,11 @@
     }
 
     .option {
+        font-size: 45px;
+        margin-left: 35px;
+    }
+    
+    .about {
         font-size: 45px;
         margin-left: 35px;
     }
