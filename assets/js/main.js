@@ -27,28 +27,37 @@ $(document).ready(function() {
         $(".opener").hide("slow");
     });
 
-    $(".location").on("click", function() {
+    /*$(".location").on("click", function() {
         if ($(".location").css("display") == ("none")) {
             $(".opener").css("display", "block");
-        };
-    });
-
-    function sendMail(contactForm) {
-        emailjs.send("gmail", "Grant", {
-                "from_name": contactForm.name.value,
-                "from_email": contactForm.emailaddress.value,
-                "further_question": contactForm.furtherquestion.value
-            })
-            .then(
-                function(response) {
-                    console.log("SUCCESS", response);
-                },
-                function(error) {
-                    console.log("FAILED", error);
-                });
+        }
+    });*/
+    
+    var myform = $("form#myform");
+    myform.submit(function(event) {
+        event.preventDefault();
+        
+        var params = myform.serializeArray().reduce(function(obj, item) {
+            obj[item.name] = item.value;
+            return obj;
+        }, {});
+        
+        var service_id = "default_service";
+        
+        var template_id = "Bicycle_Scotland";
+        myform.find("button").text("Sending...");
+        emailjs.send(service_id, template_id, params)
+            .then(function() {
+                alert("Sent!");
+                myform.find("button").text("Send");
+            }, function(err) {
+                alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
+                myform.find("button").text("Send");
+            });
+            
         return false;
-    }
-});
+    });
+})
 
 /*if ($(".location").css("display") == ("none")) {
     $(".opener").css("display", "block");

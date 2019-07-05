@@ -11,12 +11,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/main.css" type="text/css" />
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function() {
-            emailjs.init("<user_aOXkO6zpybZx3E58jGjeI>");
-        })();
-    </script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 
 <body class="bg-color bg-image whole-site">
@@ -84,18 +80,23 @@
             </div>
     </main>
     <footer>
-        <div class="row">
-            <div class="opener">
+        <div class="row container-fluid">
+            <div class="container-fluid">
                 <h2 class="sub-title">Contact me</h2>
                 <p class="Intro">If you have any further questions about any of my rides, please don't be afraid to contact me below.</p>
             </div>
-            <form onsubmit="return sendMail(this);" method="post" class="center-form">
-
-                <input type="text" name="name" class="center-form information" placeholder="Name" required/>
-                <input type="text" name="emailaddress" class="center-form information" placeholder="Email" required/>
-                <textarea rows="5" name="furtherquestion" class="center-form question" placeholder="Further Questions" required></textarea>
-                <button type="submit" class="btn center-form">Send Question</button>
-            </form>
+            <div class="container-fluid">
+                <form id="myform" class="form">
+                    <label class="form-label">Name</label>
+                    <input type="text" name="from_name" class="information" />
+                    <label class="form-label">Email</label>
+                    <input type="text" name="from_email" class="information"/>
+                    <label class="form-label">Any Further Question</label>
+                    <textarea rows="5" type="textarea" name="furtherquestion" class="information"></textarea>
+                    <br>
+                    <button class="form-button">Send</button>
+                </form>
+            </div>
         </div>
     </footer>
     </div>
@@ -103,6 +104,12 @@
     <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
     <script src="assets/js/main.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1aM34q3lncJ5MufAembcPia1G6h76u4A&callback=initMap"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("user_aOXkO6zpybZx3E58jGjeI");
+        })();
+    </script>
 </body>
 
 </html>
