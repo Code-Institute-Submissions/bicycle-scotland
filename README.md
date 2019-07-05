@@ -51,3 +51,29 @@ The feedback I received from everyone was positive and was given no information 
 When testing the site myself I found an issue with getting the about section to reappear when but when looking deeper into the code I found I was linking the about button to the other geographical locations which was causing issues so I had to create it's own class.
 
 ## Deployment
+
+As this site was initial started on the Cloud 9 software before moving it over and finishing it on the AWS cloud 9 I found some issues.
+When moving the files across via github I found that when I cloned the files onto the new platform, it brought multiple files that where never therebefore. It made the code look untidy and confusing. 
+With help from the code institute tutors I found that by changing the directory to the only one I wanted to upload to git hub and then using a forced push it would clean my code down to only what I wanted.
+
+I updated my github repository often with changes that I'd made to the site and noted clearly what changes had been made.
+Both the deployed version and the development version are completely identical.
+
+## Credits 
+
+### Content
+
+The external sites for the rides of Stewart Martin were made by Stewart Martin himself.
+
+### Media
+
+The logo image was bought from and created by London Logo Designs.
+The location images from the East and Central locations and the opening sea-image were taken by Stewart Martin.
+The location image from Dunnottar Castle is labelled for reuse and taken from https://www.flickr.com/photos/spike77/1592456268.
+The location image from Loch Torridon is labelled for reuse and taken from https://www.flickr.com/photos/91451979@N00/39714971580.
+The location image from Floors Castle is labelled for reuse and taken from https://www.geograph.org.uk/photo/3222915.
+The location image from McCaig's tower is labelled for reuse and taken from https://www.geograph.org.uk/photo/3910662.
+
+### Acknowledgements
+
+Stewart Martin was the one who came up with the idea for this site and the concept of creating a site for people to visit that will help them look and find their own adventures.
