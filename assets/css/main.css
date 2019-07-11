@@ -73,6 +73,7 @@
 .sea-image {
     width: 100%;
     margin-top: 20px;
+    object-fit: contain;
 }
 
 .Intro {
