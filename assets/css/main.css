@@ -73,7 +73,7 @@
     width: 100%;
     margin-top: 20px;
     object-fit: contain;
-    box-sizing: content-box;
+    max-height: 130px;
 }
 
 .Intro {
@@ -191,6 +191,7 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
+        max-height: 250px;
     }
 
     .option {
@@ -236,6 +237,10 @@
         text-align: left;
         padding-left: 30px;
     }
+    
+    .sea-image {
+        max-height: 275px;
+    }
 
     .option {
         font-size: 33px;
@@ -266,6 +271,10 @@
     .home-logo-img {
         height: 165px;
     }
+    
+    .sea-image {
+        max-height: 375px;
+    }
 
     .information {
         width: 400px;
@@ -287,6 +296,12 @@
 
     .bg-image {
         background-size: 800px 1100px;
+    }
+    
+    .sea-image {
+        margin-top: 35px;
+        width: 80%;
+        max-height: 600px;
     }
 
     .option {
@@ -321,11 +336,6 @@
         width: 70%;
     }
 
-    .sea-image {
-        margin-top: 35px;
-        width: 80%;
-    }
-
     .form {
         width: 600px;
     }
@@ -339,11 +349,19 @@
     .home-logo-img {
         height: 400px;
     }
+    
+    .sea-image {
+        max-height: 750px;
+    }
 }
 
 @media (min-width:3200px) {
     .home-logo-img {
         height: 450px;
+    }
+    
+    .sea-image {
+        max-height: 900px;
     }
 }
 
