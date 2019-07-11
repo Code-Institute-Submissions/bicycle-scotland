@@ -73,6 +73,7 @@
     width: 100%;
     margin-top: 20px;
     object-fit: contain;
+    box-sizing: content-box;
 }
 
 .Intro {
@@ -239,7 +240,7 @@
     .option {
         font-size: 33px;
     }
-    
+
     .about {
         font-size: 33px;
     }
@@ -292,7 +293,7 @@
         font-size: 45px;
         margin-left: 35px;
     }
-    
+
     .about {
         font-size: 45px;
         margin-left: 35px;
