@@ -8,7 +8,7 @@
     background-image: url("../images/scotland.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center;
+    background-position: center top;
 }
 
 .bg-color {
@@ -237,7 +237,7 @@
         text-align: left;
         padding-left: 30px;
     }
-    
+
     .sea-image {
         max-height: 275px;
     }
@@ -271,7 +271,7 @@
     .home-logo-img {
         height: 165px;
     }
-    
+
     .sea-image {
         max-height: 375px;
     }
@@ -297,7 +297,7 @@
     .bg-image {
         background-size: 800px 1100px;
     }
-    
+
     .sea-image {
         margin-top: 35px;
         width: 80%;
@@ -349,7 +349,7 @@
     .home-logo-img {
         height: 400px;
     }
-    
+
     .sea-image {
         max-height: 750px;
     }
@@ -359,7 +359,7 @@
     .home-logo-img {
         height: 450px;
     }
-    
+
     .sea-image {
         max-height: 900px;
     }
@@ -384,5 +384,11 @@
     #map {
         height: 700px;
 
+    }
+}
+
+@media (max-width: 766px) {
+    .bg-image {
+        background-attachment: scroll;
     }
 }
