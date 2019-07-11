@@ -34,6 +34,7 @@ JQuery (https://jquery.com/)- JQuery has made it easier to target specific aspec
 Google my maps (https://www.google.co.uk/maps/about/mymaps/)- Google my maps has helped create an interactive map on my site that is fully customized and can be easily changed.
 emailJS (https://www.emailjs.com/)- EmailJS is a platform I have used so that any website users can contact me for further questions and has created a smooth and effective communication platform.
 W3C validator (https://validator.w3.org/)- The W3C validator allowed to check my code is clean and had no faults.
+Caniuse (https://caniuse.com/)- This site helped me to overcome the diffrent problems I encountered on the diffrent browser types.
 
 ## Testing
 
@@ -44,11 +45,14 @@ Following this I continued to use the console to track any errors that were bein
 I then opened the site and did the best I could to break it by going through it in a way that was never intended. I found no problem and it was easy to navigate back to any point in the site. All links open to a new tab and uncomplete rides had no links attached.
 In the contact form I left sections uncomplete, attempted to send it and it wouldn't send without all the information being filled in as it should.
 When I had been through the site enough and couldn’t find any bugs I put it through the W3C validator to check both my HTML and CSS code was clean and free of bugs. The validator gave clear feedback on the code which I then went back to fix for example I had a open <div> tag but hadn't closed it.
+When testing the site myself I found an issue with getting the "about" section to reappear when but when looking deeper into the code I found I was linking the about button to the other geographical locations which was causing issues so I had to create it's own class.
 
 After testing the site myself I sent links to 5 different people and asked them to use the site and give feedback. I asked them for faults they found, how the images appear on their different screens and if the site was easily navigated.
-The feedback I received from everyone was positive and was given no information I could see to then change my site.
+The feedback I received from everyone was positive but it helped me to find bugs with my sea-image and my bg-image.
 
-When testing the site myself I found an issue with getting the about section to reappear when but when looking deeper into the code I found I was linking the about button to the other geographical locations which was causing issues so I had to create it's own class.
+When I using my site on different browsers it made the sea-image stretched out and out of proportion. To overcome this, I used the box-sizing property and set it to a value of content-box. However, this still didn't completely solve the problem as it left a very large gap at the top and the bottom of the image so Using max height and setting it for the different screen sizes, I managed to remove this empty gap as much as possible.
+
+For the bg-image it is a known problem that using the fixed background on android devices can be a problem therefore I had to set its position value to scroll for mobile devices. This means it now still appears on all mobiles and still appears as fixed on desktops.
 
 ## Deployment
 
