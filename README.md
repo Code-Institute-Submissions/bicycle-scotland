@@ -28,13 +28,13 @@ Future features could include a most recent ride section when there is a bigger 
 
 ## Technologies Used
 
-Google Chrome developer tools (https://www.google.com/chrome/)- I used these to test my site on different device sizes and to receive information from javascript in the console.
-Bootstrap (https://getbootstrap.com/)- Bootstrap was used throughout this site for its grid system. It has allowed me to change sizes and features depending on the screen size. This has helped the site look neat and tidy across all devices.
-JQuery (https://jquery.com/)- JQuery has made it easier to target specific aspects of the site in javascript by simplifying the DOM.  
-Google my maps (https://www.google.co.uk/maps/about/mymaps/)- Google my maps has helped create an interactive map on my site that is fully customized and can be easily changed.
-emailJS (https://www.emailjs.com/)- EmailJS is a platform I have used so that any website users can contact me for further questions and has created a smooth and effective communication platform.
-W3C validator (https://validator.w3.org/)- The W3C validator allowed to check my code is clean and had no faults.
-Caniuse (https://caniuse.com/)- This site helped me to overcome the diffrent problems I encountered on the diffrent browser types.
+Google Chrome developer tools (https://www.google.com/chrome/)- I used these to test my site on different device sizes and to receive information from javascript in the console.\
+Bootstrap (https://getbootstrap.com/)- Bootstrap was used throughout this site for its grid system. It has allowed me to change sizes and features depending on the screen size. This has helped the site look neat and tidy across all devices.\
+JQuery (https://jquery.com/)- JQuery has made it easier to target specific aspects of the site in javascript by simplifying the DOM.\
+Google my maps (https://www.google.co.uk/maps/about/mymaps/)- Google my maps has helped create an interactive map on my site that is fully customized and can be easily changed.\
+emailJS (https://www.emailjs.com/)- EmailJS is a platform I have used so that any website users can contact me for further questions and has created a smooth and effective communication platform.\
+W3C validator (https://validator.w3.org/)- The W3C validator allowed to check my code is clean and had no faults.\
+Caniuse (https://caniuse.com/)- This site helped me to overcome the diffrent problems I encountered on the diffrent browser types.\
 
 ## Testing
 
@@ -71,12 +71,12 @@ The external sites for the rides of Stewart Martin were made by Stewart Martin h
 
 ### Media
 
-The logo image was bought from and created by London Logo Designs.
-The location images from the East and Central locations and the opening sea-image were taken by Stewart Martin.
-The location image from Dunnottar Castle is labelled for reuse and taken from https://www.flickr.com/photos/spike77/1592456268.
-The location image from Loch Torridon is labelled for reuse and taken from https://www.flickr.com/photos/91451979@N00/39714971580.
-The location image from Floors Castle is labelled for reuse and taken from https://www.geograph.org.uk/photo/3222915.
-The location image from McCaig's tower is labelled for reuse and taken from https://www.geograph.org.uk/photo/3910662.
+The logo image was bought from and created by London Logo Designs.\
+The location images from the East and Central locations and the opening sea-image were taken by Stewart Martin.\
+The location image from Dunnottar Castle is labelled for reuse and taken from https://www.flickr.com/photos/spike77/1592456268.\
+The location image from Loch Torridon is labelled for reuse and taken from https://www.flickr.com/photos/91451979@N00/39714971580.\
+The location image from Floors Castle is labelled for reuse and taken from https://www.geograph.org.uk/photo/3222915.\
+The location image from McCaig's tower is labelled for reuse and taken from https://www.geograph.org.uk/photo/3910662.\
 
 ### Acknowledgements
 
