@@ -59,22 +59,11 @@ $(document).ready(function () {
             
         return false;
     });
+    
+    
 })
 
-/*$(".location").on("click", function() {
-        if ($(".location").css("display") == ("none")) {
-            $(".opener").css("display", "block");
-        }
-    });*/
-
-/*if ($(".location").css("display") == ("none")) {
-    $(".opener").css("display", "block");
-}*/
-
-
-
-
-/*    function initMap() {
+function initMap() {
         var map = new google.maps.Map(document.getElementById("map"), {
             zoom: 7,
             center: {
@@ -87,6 +76,7 @@ $(document).ready(function () {
 
         var locations = [
             { lat: 56.3745, lng: -3.3546 },
+            { lat: 56.1966, lng: -3.3764 },
             { lat: 56.2543, lng: -3.2056 },
             { lat: 56.3410, lng: -3.8710 },
             { lat: 56.9458, lng: -2.1972 },
@@ -104,4 +94,4 @@ $(document).ready(function () {
 
         var markerCluster = new MarkerClusterer(map, markers, { imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m' });
     };
-*/
+
