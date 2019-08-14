@@ -12,7 +12,7 @@ There are three rides that are yet to be completed therefore the links are only 
 As a user if I wanted to discover a ride near to me I could either click on the location I am in and see what’s available.
 I could also look at the google map below to see where I wanted to visit.
 Or I could simply fill out the contact form at the bottom and ask questions.
-The initial mock drawings for this site were drawn by hand so have been scanned and are stored in the image folder of the site.
+The initial mock drawings for this site were drawn by hand.
 
 ## Features
 
